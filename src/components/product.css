@@ -13,4 +13,31 @@
     
 }
 
+.product .price{
+    color:#333;
+    display:inline-block
+    
+}
 
+
+.product .total{
+   color:#0d4ebd;
+   font-weight:bold;
+   font-size: 18px;
+   display:inline-block;
+}
+
+
+.product .checkoutBtn{
+    display:inline-block;
+    margin-left:20px;
+}
+
+.product .quantityPicker{
+    display:inline-block;
+}
+
+.product .product-img{
+    height:250px;
+    width:100%;
+}

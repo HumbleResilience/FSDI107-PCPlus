@@ -1,6 +1,6 @@
 import"./footer.css";
 
-function Footer(){
+const Footer = () => {
    return(
        <div className="footer">
            <h4>PcPlus Store 2021. All rights reserved</h4>

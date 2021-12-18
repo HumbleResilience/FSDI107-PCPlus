@@ -1,7 +1,7 @@
 
 import"./navBar.css";
 
-function NavBar(){
+const NavBar = () => {
     return(
          <div className="navbar">
             <h5>Nav Menu will be here</h5>

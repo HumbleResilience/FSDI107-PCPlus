@@ -2,17 +2,24 @@ import './product.css';
 import QuantityPicker from './quantityPicker';
 
 
-function Product(){
+const Product = () => {
     return(
         <div className='product'>
-            <img src="https://picsum.photos/200/300
+            <img className="product-img" src="https://picsum.photos/200/300
             " alt=""></img>
 
             <h2>Title Here</h2>
-            <label>$Price</label>
-            <label>$Total</label>
+
+            <div>
+                <label className="total">$Total</label>
+                <label className="price">$Price</label>
+            </div>
+            
+
             <QuantityPicker></QuantityPicker>
-            <button>Add</button>
+            <button className="btn btn-sm btn-info checkoutBtn">
+                <i className="fa fa-cart-plus" aria-hidden="true"></i>
+             </button>
         </div>
     );
 }
