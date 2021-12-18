@@ -1,0 +1,17 @@
+.quantityPicker{
+    display:block;
+
+}
+
+.quantityPicker button, .quantityPicker label{
+    display: inline-block;
+    padding: 5px;
+    margin:5px;
+}
+
+
+.quantityPicker label{
+
+    border:1px solid gray;
+    width: 50px;
+}
