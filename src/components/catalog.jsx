@@ -5,9 +5,9 @@ import DataService from "../services/dataService";
 
 //load catalog when we get list of products
 const Catalog = () => {
-    //get products and set products
-    //state variables are INMUTABLES cannot change
-    let[products, setProducts]= useState([]);
+  //get products and set products
+  //state variables are INMUTABLES cannot change
+  let [products, setProducts] = useState([]);
 
   const loadCatalog = () => {
     console.log("catalog comp loaded");
@@ -23,18 +23,20 @@ const Catalog = () => {
   useEffect(() => {
     //do this when the component loads
     loadCatalog();
-  });
+  }, []); // [] = dependencies, when a dependency change, run function again
 
   return (
     <div className="catalog">
       <h1>this is my awesome catalog</h1>
 
       <h3>We have {products.length} amazing products for you.</h3>
-      <Product></Product>
-      <Product></Product>
-      <Product></Product>
-      <Product></Product>
-      <Product></Product>
+
+      <div className="products">
+        {products.map((prod) => (
+          <Product key={prod._id}info={prod}></Product>
+        ))}
+        ;
+      </div>
     </div>
   );
 };
